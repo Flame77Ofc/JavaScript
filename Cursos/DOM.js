@@ -1,0 +1,32 @@
+// // Capturando por Id
+// let titulo = document.getElementById("titulo1")
+
+// // capturando por Class
+// let titulo2 = document.getElementsByClassName("titulo2")
+
+// // capturando por tags
+// let tags = document.getElementsByTagName("h1")
+
+// console.log(titulo2)
+// console.log(titulo)
+// console.log(tags)
+
+
+// //
+// // Esse titulo está visivel na página, mas não no HTML.
+// let novoTitulo = document.getElementById("titulo1").innerHTML = prompt("Nome")
+
+
+// //criar novo elemento
+
+
+// let msg = prompt("Ver msg escondida. 1 = sim. 2 = não.")
+// if (msg === "1") {
+//     let novoElemento = document.createElement("h2")
+// novoElemento.innerHTML = "Olá"
+// document.body.appendChild(novoElemento)
+// }
+
+// // remover elemento
+let removerNome = document.getElementById("nome")
+removerNome.remove()
