@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()" id="button1">
+    <div id="res">Resultado</div>
+    <script>
+    function somar() {
+        var tn1 = document.getElementById('txtn1')
+        var tn2 = document.getElementById('txtn2')
+        var res = document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2   = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
+    }
+
+    { //style
+        document.body.style.fontFamily = 'Arial'; document.body.style.backgroundColor = 'lightgrey'
+        button1.style.background = 'lightskyblue'
+        button1.style.borderRadius = '6px'
+        button1.style.color = 'blue'
+        button1.style.width = '5.4em'
+        button1.style.display = 'block'
+        button1.style.marginTop = '0.3em'
+        button1.style.marginBottom = '0.3em'
+        res.style.color = 'green'
+        res.style.textShadow = '1px 1px 3px greenyellow'
+        res.style.fontWeight = 'bold'
+    }
+    </script>
+</body> 
+</html>
