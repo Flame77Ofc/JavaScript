@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <script>
+    // Divisivel por 3 = Fizz 
+    // Divisivel por 5 = Buzz 
+    // Divisivel por 3 e 5 = FizzBuzz
+    // Não divisivel por 3 e 5 = entrada
+    // Não é um número = texto
+
+    const resultado = fizzBuzz(15)
+    function fizzBuzz(entrada){
+    if (typeof entrada !== 'number'){
+        return 'não é número.'
+    if(entrada % 3 === 0)
+        return 'Fizz'
+    if (entrada % 5 === 0)
+        return 'Buzz'
+    if (entrada % 3 === 0 && entrada %5 === 0)
+        return 'FizzBuzz'
+    return entrada
+    }
+}
+    // o "%" significa divisivel.
+    </script>
+</body>
+</html>
