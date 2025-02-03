@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <script>
+    const x = 30
+    const y = 20
+
+    if (x == y) {
+        console.log("x é igual a y")
+    } else {
+        console.log("x é diferente de y")
+    }
+
+
+    if (x < y) {
+        console.log("x é menor que y")
+    } else if (x > y) {
+        console.log("x é maior que y")
+    } else {
+        console.log("x é igual a y")
+    }
+
+    let cor = 'red'
+    switch (cor) {
+        case 'vermelho', 'Red', 'red':
+            document.body.style.background = 'red';
+            break
+        case 'verde':
+            document.body.style.background = 'green';
+            break
+        case 'azul':
+            document.body.style.background = 'blue';
+            break
+        default:
+            document.body.style.background = 'black';
+    }
+
+
+
+    //case: se
+    //default: se nenhum valor for verdadeiro, execute isso...
+    </script>
+</body>
+</html>
