@@ -11,11 +11,16 @@
 <body>
     
     <script>
-    //Booleanos
-    //São dados que dizem se algo é verdadeiro ou falso.
-    //Booleanos são utilizados quando há apenas 2 únicos valores possíveis (verdadeiro e falso)
-    console.log(true)
-    console.log(false)
+    //Objetos
+    const pessoa = {
+        name: "Felipe",
+        age: 32,
+        address: {
+            street: 'Av. Central',
+            city: 'Campos'
+        },
+    }
+    console.log(`${JSON.stringify(pessoa)}`) //Exibir a interpolação corretamente
     </script>
 </body>
 </html>
