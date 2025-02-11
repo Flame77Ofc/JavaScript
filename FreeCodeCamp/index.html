@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div {
+        width: 400px;
+        height: 150px;
+        border-radius: 17px;
+        border: 1px solid rgba(0, 0, 0, 0.526);
+        padding: 15px;
+       }
+    </style>
+</head>
+<body>
+    <div id="nomeDiv"></div> <!-- Adiciona um ID para a div -->
+    <script>
+        let nome = prompt(`Por favor, diga seu nome.`);
+        let div = document.getElementById("nomeDiv"); // Obtém a div pelo ID
+        div.textContent = nome; // Adiciona o nome dentro da div
+    </script>
+</body>
+</html>
