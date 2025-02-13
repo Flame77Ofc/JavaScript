@@ -1,0 +1,2 @@
+Dificuldades:
+function
