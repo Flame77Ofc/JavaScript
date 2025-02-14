@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Adicione estilos se necessário */
+    </style>
+</head>
+<body onload="onload1()" onresize="onresize1()">
+    <button onclick="onclick1()">onclick</button>
+    <button ondblclick="ondblclick1()">ondblclick</button>
+    <button onmouseover="onmouseover1()">onmouseover</button>
+    <button onmouseout="onmouseout1()">onmouseout</button>
+    <button onmousemove="onmousemove1()">onmousemove</button>
+    <button onmousedown="onmousedown1()">onmousedown</button>
+    <button onmouseup="onmouseup1()">onmouseup</button>
+    <input type="text" onfocus="onfocus1()" onblur="onblur1()" onchange="onchange1()" placeholder="Digite algo">
+    <input type="text" onkeydown="onkeydown1()" onkeypress="onkeypress1()" onkeyup="onkeyup1()" placeholder="Pressione uma tecla">
+
+    <script>
+        // Eventos
+        function onclick1() {
+            alert('onclick: clicar apenas uma vez');
+        }
+
+        function ondblclick1() {
+            alert('ondblclick: clicar duas vezes');
+        }
+
+        function onmouseover1() {
+            alert('onmouseover: mouse em cima');
+        }
+
+        function onmouseout1() {
+            alert('onmouseout: depois que o mouse sai');
+        }
+
+        function onmousemove1() {
+            console.log('onmousemove: mouse movido sobre o elemento');
+        }
+
+        function onmousedown1() {
+            alert('onmousedown: clique do botão pressionado');
+        }
+
+        function onmouseup1() {
+            alert('onmouseup: clique do botão liberado');
+        }
+
+        function onfocus1() {
+            alert('onfocus: elemento recebeu o foco');
+        }
+
+        function onblur1() {
+            alert('onblur: elemento perdeu o foco');
+        }
+
+        function onchange1() {
+            alert('onchange: conteúdo do input foi alterado');
+        }
+
+        function onkeydown1() {
+            console.log('onkeydown: tecla pressionada');
+        }
+
+        function onkeypress1() {
+            console.log('onkeypress: tecla pressionada e solta');
+        }
+
+        function onkeyup1() {
+            console.log('onkeyup: tecla solta');
+        }
+
+        function onload1() {
+            alert('onload: página terminou de carregar');
+        }
+
+        function onresize1() {
+            console.log('onresize: janela foi redimensionada');
+        }
+    </script>
+</body>
+</html>
