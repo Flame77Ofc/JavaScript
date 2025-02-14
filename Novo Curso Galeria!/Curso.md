@@ -1,3 +1,3 @@
 Assuntos para revisar Depois:
-Math.
-Arrays
+Math. (math.random, math.ceil etc...)
+functions
