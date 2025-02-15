@@ -111,15 +111,34 @@ header {
       <ul id="users"></ul>
 
       <ul class="items">
-        <!-- <li class="item">Item 1</li>
+        <li class="item">Item 1</li>
         <li class="item">Item 2</li>
-        <li class="item">Item 3</li> -->
+        <li class="item">Item 3</li>
       </ul>
     </section>
 
     <script>
         const addUserText = document.getElementById('add-user')
         console.log(addUserText)
+
+        const items = document.querySelector('.items')
+        // items.remove() //remover todos os itens da lista
+        // items.firstElementChild.remove() //remover o primeiro filho
+        // items.lastElementChild.remove() //remover o último filho
+        // items.children[0].remove() //remover pelo indíce
+
+
+        //remover todos com o children:
+        // items.children[0].remove()
+        // items.children[0].remove()
+        // items.children[0].remove()
+
+        items.children[1].innerHTML = '<h1>Hello</h1>'
+
+
+        //alterando o botao
+        const botao = document.getElementById('submit-button')
+        botao.style.backgroundColor = '#11435F'
     </script>
   </body>
 </html>
