@@ -12,10 +12,15 @@ console.log('$' + (2095 + 799) / 100) //100% Correct: $28.94
 
 //The \n command
 console.log('some\ntext')
+//or:
+console.log(`Hello
+World`)
 
 //Ways to create a string:
 //Both 3 has the same result.
 console.log("Hello, world")
 console.log('Hello, world')
-console.log(`Hello, world`) //This one is most used to create interpolations: See an example:
+console.log(`Hello, world`)
+
+//Template String - Interpolation = insert a value directly into a string:
 console.log(`Hello, ${name}`)
