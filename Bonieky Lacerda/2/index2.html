@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <input id="usd"></input>
+    <input id="brl"></input>
+    <script>
+        const usdInput = document.getElementById('usd')
+        const brlInput = document.getElementById('brl')
+
+        usdInput.addEventListener('keyup', () => {
+            console.log(usdInput.value,)
+        })
+
+        brlInput.addEventListener('keyup', () => {
+            console.log('clicou no campo real')
+        })
+    </script>
+</body>
+</html>
