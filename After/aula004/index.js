@@ -1,4 +1,3 @@
-//Programação orientada a objetos / POO
 class person {
     constructor(nome, sobrenome, idade) {
         this.nome = nome;

@@ -3,5 +3,3 @@
     onmouseout -> Disparado quando o mouse é movido para fora do elemento.
     onmousemove -> Disparado quando o mouse é movido no elemento.
     onmousedown -> Disparado quando o clique do botão foi pressionado.  
-
-    20:15
