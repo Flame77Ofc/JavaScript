@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<body>
+    
+    <script>
+    //Consoles:
+    //console.clear()
+    //O que faz: Limpa o console, removendo todas as mensagens anteriores.
+    console.clear()
+
+    //console.log()
+    //O que faz: Exibe uma mensagem no console. É o método mais comum para depuração e exibição de informações.
+    console.log("Isso é uma mensagem de log.");
+
+    //console.error()
+    //O que faz: Exibe uma mensagem de erro no console. Geralmente, o texto aparece em vermelho e pode incluir um stack trace.
+    console.error("Isso é uma mensagem de erro.");
+
+    //console.warn()
+    //O que faz: Exibe uma mensagem de aviso no console. O texto geralmente aparece em amarelo.
+    console.warn("Isso é um aviso.");
+
+    //console.table()
+    //O que faz: Exibe dados tabulares no console, organizando arrays ou objetos em uma tabela.
+    console.table([{ nome: "João", idade: 25 }, { nome: "Maria", idade: 30 }]);
+
+    //console.assert()
+    //O que faz: Exibe uma mensagem de erro no console se uma afirmação for falsa. Se for verdadeira, não faz nada.
+    console.assert(1 === 2, "1 não é igual a 2!");
+
+    //console.timeLog()
+    //O que faz: Exibe o tempo decorrido desde que console.time() foi chamado, sem interromper o cronômetro.
+    console.time("Cronômetro");
+    console.timeLog("Cronômetro"); // Exibe o tempo parcial
+    </script>
+</body>
+</html>
