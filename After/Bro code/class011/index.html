@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <button id="buyButton">Compre!</button>
+    <script>
+    //setTimeout() - Executa uma função após determinado tempo de milisegundos
+
+
+    let item = 'crypto'
+    let price = 420.67
+
+let timer1 = setTimeout = (primeiraMensagem, 3000);
+let timer2 = setTimeout = (segundaMensagem, 6000);
+let timer3 = setTimeout = (terceiraMensagem, 9000);
+
+function primeiraMensagem(item, price) {
+    alert(`Compre esse ${item} por ${price}`)
+}
+function segundaMensagem() {
+    alert(`Isso não é um golpe!`)
+}
+function terceiraMensagem() {
+    alert(`Compre isso!!`)
+}
+document.getElementById('buyButton').onclick = function() {
+    clearTimeout(timer1)
+    clearTimeout(timer2)
+    clearTimeout(timer3)
+}
+    </script>
+</body>
+</html>

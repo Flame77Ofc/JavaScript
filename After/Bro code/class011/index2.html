@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <script>
+    // setInterval()
+    let count = 0
+    let max = window.prompt('Número máximo')
+    max = Number(max)
+
+    const Interval = setInterval(countUp, 1000);
+    function countUp() {
+        count+=1
+        console.log(count)
+        if (count >= max) {
+            clearInterval(Interval)
+            console.log('O tempo acabou.')
+        }
+    }
+    </script>
+</body>
+</html>

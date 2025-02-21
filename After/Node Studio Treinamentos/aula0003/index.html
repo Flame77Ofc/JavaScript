@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div id="Europeu">
+        <div class="Item">BNE</div>
+        <div class="Item">SDF</div>
+        <div class="Item">ALME</div>
+    </div>
+
+    <div id="Brasileiro">
+        <div class="Item">BKW</div>
+        <div class="Item">ORS</div>
+        <div class="Item">PNB</div>
+    </div>
+    <script>
+    console.log(document.getElementById('Europeu').querySelectorAll('.Item')) //Mostrará apenas os itens do id Europeu
+    console.log(document.getElementById('Europeu').querySelectorAll('.Item')[0]) //Por indíce
+    </script>
+</body>
+</html>
