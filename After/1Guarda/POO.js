@@ -5,7 +5,7 @@ const nascimento = '02/01/1989'
 const pessoaA = {
     nome: 'Pedro',
     sobrenome: 'Silva',
-    nascimento: new Date('8-2-90')
+    nascimento: new Date('8-2-90'),
     obterNomeCompleto() {
         return `${this.nome} ${this.sobrenome}` //this: significa que vai retornar o próprio objeto.
     },
