@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box {
+        border: 3px solid black;
+        width: 100%;
+        height: 125px;
+       }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">
+        <p>Box1</p>
+    </div>
+
+    <div id="box2" class="box">
+        <p>box2</p>
+    </div>
+
+    <div id="box3" class="box">
+        <p>box3</p>
+    </div>
+
+    <div id="box4" class="box">
+        <p>box4</p>
+    </div>
+
+    <script>
+    //ALTERANDO ELEMENTOS PELO DOM
+    //1- CRIANDO ELEMENTOS
+    const newH1 = document.createElement('h1')
+
+    //2- ADICIONANDO PROPRIEDADES
+    newH1.textContent = 'Hello' //Adicionando texto
+    newH1.id = 'TrocandoID' //Trocando o ID
+    newH1.style.color = 'red'; newH1.style.textAlign = 'center' //Mudando a cor e centralizando
+
+    //MOSTRANDO NO NAVEGADOR, HÁ TRÊS FORMAS DE FAZER ISSO:
+    // document.body.append(newH1) //1- Mostrando em baixo
+    // document.body.prepend(newH1) //2- Mostrando no topo
+    document.getElementById('box1').append(newH1) //3- Dentro de algum outro elemento do HTML
+
+    //REMOVER ELEMENTO HTML
+    document.getElementById('box1').removeChild(newH1)
+</script>
+</body>
+</html>

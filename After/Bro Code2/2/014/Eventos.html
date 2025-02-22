@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <div id="myBox"><h1>CLICK ME</h1></div>
+    <script>
+    //addEventListener
+    const myBox = document.getElementById('myBox')
+
+    myBox.addEventListener('click', event => {
+        event.target.style.backgroundColor = 'red'
+        event.target.textContent = 'JOIHKJKDHUIGHJ'
+    })
+    </script>
+</body>
+</html>
