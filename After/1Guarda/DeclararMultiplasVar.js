@@ -1,9 +1,3 @@
-const pessoa = {
-    nome: 'Gabriel'
-}
-pessoa.email = 'hellowcobaia123@gmail.com'
-console.log(pessoa)
-
 //Declarar múltiplas variáveis de uma vez só:
 let a, b, c = 10
 const e = 30,
