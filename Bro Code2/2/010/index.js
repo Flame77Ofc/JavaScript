@@ -9,7 +9,6 @@ class Animal{
         this.name = name;
         this.age = age;
     }
-
     move(speed){
         console.log(`The ${this.name} moves at a speed of ${speed}mph`);
     }
