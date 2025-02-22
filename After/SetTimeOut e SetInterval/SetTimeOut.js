@@ -1,4 +1,4 @@
-//aetTimeOut()
+//setTimeOut()
 const AlertaLogin = () => {
     console.log('Login')
 }
