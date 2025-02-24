@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <script>
+    //Operadores aritméticos
+    console.log(5 + 2) //7
+    console.log(5 - 2) //3
+    console.log(5 * 2) //10
+    console.log(5 / 2) //2.5
+    console.log(5 % 2) //Faz a operação... e Quando tiver que colocar a virgula, para: 1
+    console.log(5 ** 2) //25
+
+    //ordem de precedência
+    console.log(5 + 3 / 2)// 3 / 2 = 1.5; 1.5 + 5 = 6.5
+    console.log((5 + 3) / 2)//5 + 3 = 8; 8 / 2 = 4
+
+
+    //Operadores relacionais ou de comparacão - retornam valores booleanos: true ou false
+    console.log(4 > 2) //Maior
+    console.log(4 >= 2) //Maior ou igual
+    console.log(4 < 2) //Menor
+    console.log(4 <= 2) //Menor ou igual
+    console.log(4 == 2) //Igual
+    console.log(4 === 2) //Igual - comparação de tipo
+    console.log(4 != 2) //diferente
+
+    //Operadores lógicos
+    /*
+    && - E lógico
+    || - Ou lógico
+    ! - Negação
+    */
+    console.log(true && false) //false   
+    console.log(false && true) //false
+    console.log(true && true) //false
+    console.log(false && false) //false
+
+    console.log(true || false) //true 
+    console.log(false || true) //true   
+    console.log(true || true) //true   
+    console.log(false || false) //false
+
+    console.log(!true) //false
+    console.log(!false) //true
+
+
+    var idade = 16
+    console.log(idade >= 15 && idade <= 17) //A idade está entre 15 e 17? true
+
+
+    //Operador Ternário
+    var teste = false
+    teste == false ? console.log('É verdadeiro') : console.log('É falso')
+
+    var nota = 8
+    nota > 7 ? console.log(true) : console.log(false)
+    </script>
+</body>
+</html>

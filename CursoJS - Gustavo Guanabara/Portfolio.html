@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.principal {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            font-family: serif;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            transition: background-color 0.8s, color 0.5s, border 0.9s, transform 0.7s ease-in-out;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+            border: solid lightseagreen 4px;
+            background-color: aliceblue;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 13.7em;
+            height: 3.2em;
+            margin: 2.3em;
+        }
+
+        button:hover {
+            background-color: lightseagreen;
+            border: solid aliceblue 4px;
+            transform: scale(1.3, 1.3);
+            color: aliceblue;
+        }
+
+        a {
+            color: cornflowerblue;
+            text-decoration: none;
+        }
+
+        #tecnologias {
+            background-color: rgb(105, 172, 211);
+            position: absolute;
+            height: 55vh;
+            width: 100vw;
+        }
+        .footerp {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+            text-align: center;
+            position: absolute;
+            font-size: 1.5rem;
+            color: white;
+            left: 37.5%;
+            top: 120%;
+            a {
+                color: rgb(5, 72, 197);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="principal">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-usuario-anonimo-3-1133988.png?f=webp"
+                title="Foto Anônima" alt="Foto Anônima" height="300px">
+            <h1>Gabriel Goulart</h1>
+            <p>Programador e Cientista</p>
+            <button onclick="link()">Conhecer meu GitHub</button>
+            <div id="tecnologias">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">Tecnologias</h2>
+                <img src="https://www.pngkey.com/png/full/213-2139206_html5-css-and-javascript-image-html-css-javascript.png"
+                    height="230px">
+            </div>
+    </main>
+    </div>
+    <footer>
+        <p class="footerp">Site criado por <a href="https://github.com/flame77ofc">Gabriel Goulart</a></p>
+    </footer>
+    <script>
+        function link() {
+            window.open('https://github.com/flame77ofc')
+        }
+
+    </script>
+</body>
+
+</html>
