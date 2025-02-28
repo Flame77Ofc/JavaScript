@@ -5,5 +5,4 @@ const person = {
     children: false
 }
 
-const ConvertJSON = JSON.stringify(person)
-console.log(ConvertJSON)
+console.log(JSON.stringify(person));

@@ -4,37 +4,36 @@ console.log(data.toLocaleString('pt-BR'))
 //Todos os tipos de Manipular datas
 //Pegar a data completa
 let Data = new Date()
-console.log(Data)
+console.log(Data.toLocaleString('pt-BR'))
 
 //Pegar o ano completo
 let ano = data.getFullYear()
-console.log(ano)
+console.log(ano.toLocaleString('pt-BR'))
 
 //Pegar o mês completo (começa do 0 (janeiro) até 11 (dezembro))
 let mes = data.getMonth()
-console.log(mes)
+console.log(mes.toLocaleString('pt-BR'))
 
 //Pegar dia do mês
 let dia = data.getDate()
-console.log(dia)
+console.log(dia.toLocaleString('pt-BR'))
 
 //Pegar a hora
 let hora = data.getHours()
-console.log(hora)
+console.log(hora.toLocaleString('pt-BR'))
 
 //Pegar os minutos
 let mins = data.getMinutes()
-console.log(mins)
+console.log(mins.toLocaleString('pt-BR'))
 
 //Pegar os segundos
 let segs = data.getSeconds()
-console.log(segs)
+console.log(segs.toLocaleString('pt-BR'))
 
 //Pegar os milisegundos
 let miliseg = data.getMilliseconds()
-console.log(miliseg)
+console.log(miliseg.toLocaleString('pt-BR'))
 
-console.clear()
 //pegar data no padrão brasileiro
 let dataBR = data.toLocaleString('pt-BR')
-console.log(dataBR)
+console.log(dataBR.toLocaleString('pt-BR'))

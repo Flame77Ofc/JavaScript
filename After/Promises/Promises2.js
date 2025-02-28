@@ -1,65 +1,44 @@
-// Promise = An Object that manages asynchronous operations.
-//                    Wrap a Promise Object around {asynchronous code}
-//                    "I promise to return a value"
-//                    PENDING -> RESOLVED or REJECTED
-//                   new Promise((resolve, reject) => {asynchronous code})
+// Promessa = Um objeto que gerencia operações assíncronas.
+//                    Envolva um objeto Promise em torno de {código assíncrono}
+//                    "Eu prometo retornar um valor"
+//                    PENDENTE -> RESOLVIDO ou REJEITADO
+//                   new Promise((resolve, reject) => {código assíncrono})
 
-// DO THESE CHORES IN ORDER
+// FAÇA ESSAS TAREFAS EM ORDEM
 
-// 1. WALK THE DOG
-// 2. CLEAN THE KITCHEN
-// 3. TAKE OUT THE TRASH
+// 1. PASSEAR COM O CACHORRO
+// 2. LIMPAR A COZINHA
+// 3. LEVAR O LIXO PARA FORA
 
-function walkDog(){
+function passearComOCachorro() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-
-            const dogWalked = false;
-
-            if(dogWalked){
-                resolve("You walk the dog 🐕");
-            }
-            else{
-                reject("You DIDN'T walk the dog");
-            }
+            const cachorroPasseado = false;
+            cachorroPasseado ? resolve("Você passeou com o cachorro 🐕") : reject("Você NÃO passeou com o cachorro");
         }, 1500);
     });
 }
 
-function cleanKitchen(){
+function limparCozinha() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            
-            const kitchenCleaned = true;
-
-            if(kitchenCleaned){
-                resolve("You clean the kitchen 🧹");
-            }
-            else{
-                reject("You DIDN'T clean the kitchen");
-            }
+            const cozinhaLimpa = true;
+            cozinhaLimpa ? resolve("Você limpou a cozinha 🧹") : reject("Você NÃO limpou a cozinha");
         }, 2500);
     });
 }
 
-function takeOutTrash(){
+function levarLixoParaFora() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-
-            const trashTakenOut = true;
-
-            if(trashTakenOut){
-                resolve("You take out the trash ♻");
-            }
-            else{
-                reject("You DIDN'T take out the trash");
-            }
-
+            const lixoLevadoParaFora = true;
+            lixoLevadoParaFora ? resolve("Você levou o lixo para fora ♻") : reject("Você NÃO levou o lixo para fora");
         }, 500);
     });
 }
 
-walkDog().then(value => {console.log(value); return cleanKitchen()})
-                  .then(value => {console.log(value); return takeOutTrash()})
-                  .then(value => {console.log(value); console.log("You finished all the chores!")})
-                  .catch(error => console.error(error));
+passearComOCachorro()
+    .then(valor => { console.log(valor); return limparCozinha(); })
+    .then(valor => { console.log(valor); return levarLixoParaFora(); })
+    .then(valor => { console.log(valor); console.log("Você terminou todas as tarefas!"); })
+    .catch(erro => console.error(erro));

@@ -1,3 +1,6 @@
+//Math Methods
 //Gerar um número aleatório
-let x = Math.floor(Math.random() * 7) + 1 //Gera búmero aleatório de 1 a 7
-console.log(x)
+console.log(Math.random() * 7 + 1) //gerar número aleatório de 1 a 7
+
+//
+console.log(Math.ceil())

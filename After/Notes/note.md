@@ -1,2 +1,0 @@
-Promisse
-Assync Await
