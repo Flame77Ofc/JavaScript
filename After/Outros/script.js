@@ -1,13 +1,3 @@
-//Boolean -> true ou false
-var isEnabled = true
-var teste = 'Pedro'
-
-console.log(isEnabled)
-
-//Array
-let names = ['Gabriel', 'Pedro', 'João', 'Maria']
-console.log(names[3]) //Maria
-
 var teams = new Array()
 teams.push('Brasil')
 console.log(teams.length)
@@ -24,9 +14,6 @@ function testName(name) {
 }
 
 console.log(testName('Gabriel'))
-
-
-
 
 
 // let nomes = ['Gabriel', 'Pedro', 'João', 'Maria']
