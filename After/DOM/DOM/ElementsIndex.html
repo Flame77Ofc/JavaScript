@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+
     </style>
 </head>
+
 <body>
-    <p>Para</p>
+    <p class="a">Para</p>
     <hr>
-    <p>Para</p>
+    <p class="a">Para</p>
     <script>
-    let paragrafos = document.getElementsByTagName("p")
-    for (paragrafo of paragrafos) {
-        paragrafo.style.background = "red"
-    }
+        let a = document.querySelectorAll('.a')
+        //Selecionar múltipos elementos
+        a[0].style.background = 'green'
+        a[1].style.background = 'green'
     </script>
 </body>
+
 </html>
