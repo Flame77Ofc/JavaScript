@@ -82,6 +82,3 @@ let emotes = [
   { nome: "Irritacao", reacao: "Ao usar, o jogador indica que está brabo ou irritado", toxico: false },
   { nome: "Concordar", reacao: "Ao usar, o jogador indica que está concordando com algo, semelhante ao 'Certo'", toxico: false }
 ];
-
-// Mostrar quantidade de emotes:
-console.log("Número de emotes:", emotes.length);
