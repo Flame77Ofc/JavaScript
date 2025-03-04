@@ -72,9 +72,9 @@ let veiculos = [
 
 let emotes = [
   { nome: "Acenar", reacao: "Ao usar, o jogador acena, comprimentando outro jogador", toxico: false },
-  { nome: "Duvida", reacao: "Ao usar, o jogador tem duvida sobre algo", toxico: false },
+  { nome: "Duvida", reacao: "Ao usar, o jogador tem dúvida sobre algo", toxico: false },
   { nome: "Chorar", reacao: "Ao usar, o jogador chora", toxico: false },
-  { nome: "Rir", reacao: "Ao usar, o jogador ri", toxico: true, toxico: false },
+  { nome: "Rir", reacao: "Ao usar, o jogador ri", toxico: false }, // Corrigido o erro da chave duplicada
   { nome: "Flexionar", reacao: "Ao usar, o jogador mostra amor por outro jogador.", toxico: false },
   { nome: "Certo", reacao: "Ao usar, o jogador aponta que algo está certo", toxico: false },
   { nome: "Frustacao", reacao: "Ao usar, o jogador indica que algo foi estúpido", toxico: true },
@@ -82,3 +82,8 @@ let emotes = [
   { nome: "Irritacao", reacao: "Ao usar, o jogador indica que está brabo ou irritado", toxico: false },
   { nome: "Concordar", reacao: "Ao usar, o jogador indica que está concordando com algo, semelhante ao 'Certo'", toxico: false }
 ];
+
+const CONCAT = espadas.concat(armaduras, pocoes, alimentos, veiculos, emotes)
+
+// Seleciona um emote aleatório
+console.log(CONCAT[Math.floor(Math.random() * CONCAT.length)]);
