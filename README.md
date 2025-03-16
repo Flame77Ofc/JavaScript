@@ -1,1 +1,0 @@
-Olá, bem vindo ao meu repositório de JavaScript, aqui eu irei colocar sobre o que eu aprendo, e também disponibilizarei recursos de JavaScript para todos, então, sinta a vontade para modificar, ver e usar!

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
+
 <body>
     <input type="text" id="usuario" placeholder="Usuário" maxlength="20">
     <input type="password" id="senha" placeholder="Senha" autocomplete="current-password" maxlength="12">
@@ -15,7 +17,7 @@
     <script>
         function verificarAcesso() {
             let usuario = document.getElementById("usuario").value;
-            let senha = document.getElementById("senha").value; 
+            let senha = document.getElementById("senha").value;
             let mensagem = document.getElementById("mensagem");
 
             if (usuario === "admin" && senha === "admin") {
@@ -34,11 +36,12 @@
                         }, 1100)
                     }, 600)
                 }, 470)
-            } else   {
+            } else {
                 mensagem.textContent = "Acesso bloqueado";
                 mensagem.style.color = "red";
             }
         }
     </script>
 </body>
+
 </html>
