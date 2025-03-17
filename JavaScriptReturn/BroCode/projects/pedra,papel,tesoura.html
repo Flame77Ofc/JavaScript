@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedra papel tesoura</title>
+    <style>
+        * {
+            color: white;
+        }
+        body {
+            background-color: darkcyan;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 1px 2px black;
+        }
+        mark {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function main() {
+        let machineChoice = Math.floor(Math.random() * 9) + 1
+        let userChoice = prompt('pedra, papel ou tesoura?')
+
+
+        function machineChoiceFunc() {
+        if (machineChoice <= 3) {
+            machineChoice = 'pedra'
+        } else if (machineChoice <= 6) {
+            machineChoice = 'papel'
+        } else {
+            machineChoice = 'tesoura'
+        }
+    }
+
+        function userChoiceFunc() {
+        if (userChoice == 'papel' && machineChoice == 'papel') {
+            document.write("<h1>empate</h1>")
+        } else if (userChoice == 'papel' && machineChoice == 'pedra') {
+            document.write("<h1>você ganhou</h1>")
+        } else if (userChoice == 'papel' && machineChoice == 'tesoura') {
+            document.write("<h1>você perdeu</h1>")
+        } else if (userChoice == 'pedra' && machineChoice == 'papel') {
+            document.write("<h1>você perdeu</h1>")
+        } else if (userChoice == 'pedra' && machineChoice == 'pedra') {
+            document.write("<h1>empate</h1>")
+        } else if (userChoice == 'pedra' && machineChoice == 'tesoura') {
+            document.write("<h1>papelvocê ganhou</h1>")
+        } else if (userChoice == 'tesoura' && machineChoice == 'papel') {
+            document.write("<h1>você ganhou</h1>")
+        } else if (userChoice == 'tesoura' && machineChoice == 'pedra') {
+            document.write("<h1>você perdeu</h1>")
+        } else if (userChoice == 'tesoura' && machineChoice == 'tesoura') {
+            document.write("<h1>empate</h1>")
+        }
+    }
+    machineChoiceFunc()
+    userChoiceFunc()
+    document.write(`<h2>você escolheu <mark>${userChoice}</mark> e a máquina escolheu <mark>${machineChoice}</mark></h2>`)
+}
+main()
+    </script>
+</body>
+
+</html>

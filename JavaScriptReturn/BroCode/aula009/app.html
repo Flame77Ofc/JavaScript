@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="checkbox"> Subscribe <br>
+    <input type="radio" id="visa"> Visa <br>
+    <input type="radio" id="mastercard"> MasterCard <br>
+    <input type="radio" id="paypal"> PayPal <br>
+    <button type="submit" id="submit">submit</button> <br>
+    <div id="result"></div> <br>
+    <div id="paymentResult"></div> <br>
+    <script>
+    let visa = document.getElementById("visa")
+    let checkbox = document.getElementById("checkbox")
+    let mastercard = document.getElementById("mastercard")
+    let paypal = document.getElementById("paypal")
+    let result = document.getElementById("result")
+    let paymentResult = document.getElementById("paymentResult")
+    let submit = document.getElementById("submit")
+
+    submit.addEventListener('click', () => {
+
+        if (checkbox.checked) {
+            result.textContent = 'Você está inscrito'
+        } else {
+            result.textContent = 'Você não está inscrito'
+        }
+
+        if (visa.checked) {
+            paymentResult.textContent = 'visa'
+        } else if (mastercard.checked) {
+            paymentResult.textContent = 'mastercard'
+        } else if (paypal.checked) {
+            paymentResult.textContent = 'paypal'
+        } else {
+            paymentResult.textContent = 'Selecione apenas um'
+        }
+    })
+    </script>
+</body>
+</html>
