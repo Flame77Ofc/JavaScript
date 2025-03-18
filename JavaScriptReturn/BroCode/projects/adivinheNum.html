@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        const resposta = Math.floor(Math.random() * 100) + 1
+
+        while (true) {
+        let palpite = prompt('Digite um número entre 1 a 100')
+        if ((palpite <= 0) || (palpite >= 100)) {
+            alert('Por favor, digite um número certo')
+            continue
+        }
+
+        if (palpite < resposta) {
+            alert(palpite + '\nNúmero baixo, tente um número mais alto!')
+        } else if (palpite > resposta) {
+            alert(palpite + '\nNúmero alto, tente um número mais baixo!')
+        } else if (resposta == palpite) {
+            alert(palpite + '\nVocê acertou!')
+            break
+        }
+    }
+    </script>
+</body>
+
+</html>
