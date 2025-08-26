@@ -1,1 +1,0 @@
-// Operador Ternário
